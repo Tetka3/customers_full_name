@@ -1,0 +1,15 @@
+class Customer:
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+               
+        
+    def full_name(self):
+        return '{} {}'.format(self.first, self.last)
+
+cust_1 = Customer('John', 'James', 5000)
+cust_2 = Customer('Philip', 'Jakes', 6500)
+
+print(cust_1.full_name()) 
+print(cust_2.full_name())
